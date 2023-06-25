@@ -1,0 +1,45 @@
+---
+title: "회귀분석"
+author: "베2직"
+date: "2023-06-25"
+output: html_document
+---
+
+```{r}
+diamonds <- read.csv(file.choose(), encoding="UTF-8", header=T)
+#setwd("C://Users//user//Downloads//diamonds")
+#df = read.csv('diamonds.csv')
+ls(diamonds)
+library(car)
+```
+```{r}
+model <- lm(price~.,data=diamonds)
+vif(model)
+```
+```{r}
+par(mfrow=c(1,1)) #plot창에 하나만 들어감
+plot(model)
+summary(model)
+```
+
+
+```{r}
+
+diamonds$log_price <- log(diamonds$price)
+diamonds <- subset(diamonds, select=-c(price))
+
+modellog <- lm(log_price ~ as.factor(clarity)+as.factor(color)+
+                 as.factor(cut)+carat+depth+table,data=diamonds)
+
+plot(modellog)
+summary(modellog)
+
+vif(modellog)
+
+par(mfrow=c(1,2))
+plot(model$residuals~model$fitted.values, main='before transformation')
+abline(h=0,col='red')
+plot(modellog$residuals~modellog$fitted.values, main='after transformation')
+abline(h=0,col='red')
+```
+
