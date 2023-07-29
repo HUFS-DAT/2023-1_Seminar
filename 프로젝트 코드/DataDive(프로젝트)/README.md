@@ -9,9 +9,9 @@
 
 - 슬라이딩 윈도우 알고리즘 활용
 
-![Untitled](./image/Untitled.png)
+![Untitled](./Untitled.png)
 
 - 모델 비교 결과 result 참고
 - LSTM 기준 백테스트 결과
 
-![Untitled](./image/Untitled2.png)
+![Untitled](./Untitled2.png)
