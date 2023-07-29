@@ -1,7 +1,17 @@
-## DataDive(프로젝트)팀 캡스톤 프로젝트 코드 업로드 공간입니다.
-## 양식
-### 팀명_프로젝트_주제
+# Stock Market Prediction Project
 
-R: .html or .Rmd
+> 기간에 따른 ETF 수익률 예측 딥러닝 모델 분석
+: LSTM 과 Transformer를 활용하여
+> 
 
-Python: .ipynb
+- Data
+    - KOSPI200 지수 추종 ETF KODEX200
+
+- 슬라이딩 윈도우 알고리즘 활용
+
+![Untitled](./image/Untitled.png)
+
+- 모델 비교 결과 result 참고
+- LSTM 기준 백테스트 결과
+
+![Untitled](./image/Untitled2.png)
