@@ -13,7 +13,7 @@
 - 1개월 LSTM(좌)vsTransformer(우)결과
 ![Untitled](./1month.png)
 
-- 7개월 LSTM(좌)vsTransformer(우)결과
+- 6개월 LSTM(좌)vsTransformer(우)결과
 ![Untitled](./6month.png)
 
 - LSTM 기준 백테스트 결과
