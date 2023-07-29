@@ -8,10 +8,13 @@
     - KOSPI200 지수 추종 ETF KODEX200
 
 - 슬라이딩 윈도우 알고리즘 활용
-
 ![Untitled](./Untitled.png)
 
-- 모델 비교 결과 result 참고
-- LSTM 기준 백테스트 결과
+- 1개월 LSTM(좌)vsTransformer(우)결과
+![Untitled](./1month.png)
 
+- 7개월 LSTM(좌)vsTransformer(우)결과
+![Untitled](./6month.png)
+
+- LSTM 기준 백테스트 결과
 ![Untitled](./Untitled2.png)
